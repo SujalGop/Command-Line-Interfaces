@@ -1,0 +1,53 @@
+Question 1 - Linux Environment Verification
+1. Username and groups associated with your account
+Command: whoami groups
+
+Output:
+
+Sujalgop
+Sujalgop
+Explanation: I executed the whoami command to find my current logged-in username. Then, I ran the groups command to view all the user groups my account belongs to. The output showed my username is Sujalgop and I belong to a primary group with the same name.
+
+2. Current shell being used
+Command: echo $SHELL
+
+Output:
+
+/bin/bash
+Explanation: I printed the $SHELL environment variable to identify the command-line interpreter currently in use. The output confirms that the Bash shell is the active shell for my current session.
+
+3. Current working directory
+Command: pwd
+
+Output:
+
+/home/Sujalgop
+Explanation: I ran the pwd (print working directory) command to determine my exact location within the filesystem hierarchy. It displayed the absolute path to my home directory.
+
+4. List of files and directories in your workspace
+Command: ls -la
+
+Output:
+
+
+total 13180
+drwx------.      2 Sujalgop Sujalgop     115 Jul  3 14:58 .
+drwxr-xr-x. 363665 root     root     9146368 Jul  3 14:58 ..
+-rw-r--r--.      1 Sujalgop Sujalgop      18 Nov 24  2021 .bash_logout
+-rw-r--r--.      1 Sujalgop Sujalgop     193 Nov 24  2021 .bash_profile
+-rw-r--r--.      1 Sujalgop Sujalgop     231 Nov 24  2021 .bashrc
+-rw-r--r--.      1 Sujalgop Sujalgop     334 Jan  7  2022 .emacs
+-rw-r--r--.      1 root     root           9 Jul  3 14:58 .magic_string.txt
+-rw-r--r--.      1 Sujalgop Sujalgop     658 Apr  7  2020 .zshrc
+Explanation: I used the ls -la command to list all contents in my workspace, including hidden configuration files like .bashrc. The output showed detailed metadata such as file permissions, ownership, size, and modification timestamps.
+
+5. Network connectivity verification result
+Command: ping -c 4 google.com
+
+Output:
+
+ping: socket: Permission denied
+Explanation: I executed the ping command to test network connectivity. The output resulted in a "Permission denied" error, which is an expected observation because shared educational environments like Webminal restrict standard users from creating raw sockets for security reasons.
+
+6. Screenshots
+Command Execution Screenshot
