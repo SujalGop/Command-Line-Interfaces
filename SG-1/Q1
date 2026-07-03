@@ -50,6 +50,4 @@ ping: socket: Permission denied
 Explanation: I executed the ping command to test network connectivity. The output resulted in a "Permission denied" error, which is an expected observation because shared educational environments like Webminal restrict standard users from creating raw sockets for security reasons.
 
 6. Screenshots
-Command Execution Screenshot
-
-![Command Execution Screenshot](./q1.png)
+Required screenshot is in the same folder by the name of q1.png
